@@ -1,0 +1,131 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="style_form1.css" /> 
+    <title></title>
+</head>
+<body>
+
+    <form method="post" action="traitement.php">
+
+        <fieldset>
+            <legend>Zones de saisie</legend>
+
+            <p>
+                <label for="pseudo">Votre pseudo :</label><br />
+                <input type="text" name="pseudo" id="pseudo" placeholder="Ex: major_117" size="20" maxlength="15" autofocus required />
+                <br />
+                <label for="pass">Mdp :</label><br />
+                <input type="password" name="pass" id="pass" size="20" maxlength="10" required />
+                <br />
+                <label for="mail">Email :</label><br />
+                <input type="email" name="mail" id="mail" placeholder="Ex: major_117@yahoo.fr" size="35" required />
+                <br />
+                <label for="addresse">Addresse url :</label><br />
+                <input type="url" name="addresse" id="addresse" placeholder="Ex: http://www.major_117.fr" size="35" />
+                <br />
+                <label for="num">Tél :</label><br />
+                <input type="tel" name="num" id="num" placeholder="Ex: 0102030405" size="20" required />
+                <br />
+                <label for="n_entier">Choisir :</label><br />
+                <input type="number" name="n_entier" id="n_entier" placeholder="Ex: 15" min="0" max="100" step="5" />
+                <br />
+                <label for="vol">Volume :</label><br />
+                <input type="range" name="vol" id="vol" size="10" min="-15" max="15" step="3" />
+                <br />
+                <label for="couleur">Couleur :</label><br />
+                <input type="color" name="couleur" id="couleur" />
+                <br />
+                <label for="recherche">Chercher :</label><br />
+                <input type="search" name="recherche" id="recherche" />
+                <br />
+                <label for="description">Décrivez votre situation</label><br />
+                <textarea name="desciption" id="description" rows="10" cols="50">Texte...</textarea>
+            </p>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Datation</legend>
+
+            <p>
+                <label for="date">Date :</label><br />
+                <input type="date" name="date" id="date" />
+                <br />
+                <label for="heure">Heure :</label><br />
+                <input type="time" name="heure" id="heure" />
+                <br />
+                <label for="semaine">Semaine :</label><br />
+                <input type="week" name="semaine" id="semaine" />
+                <br />
+                <label for="mois">Mois :</label><br />
+                <input type="month" name="mois" id="mois" />
+                <br />
+                <label for="sans_gmt">Date/heure :</label><br />
+                <input type="datetime" name="sans_gmt" id="sans_gmt" />
+                <br />
+                <label for="avec_gmt">Date/heure/gmt :</label><br />
+                <input type="datetime-local" name="avec_gmt" id="avec_gmt" />
+            </p>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Elélents d'options</legend>
+
+            <p>
+                Choisir une ou plusieur couleur(s) :<br />
+                <input type="checkbox" name="blanc" id="blanc" checked /><label for="blanc">Blanc</label>
+                <br />
+                <input type="checkbox" name="vert" id="vert" /><label for="vert">Vert</label>
+                <br />
+                <input type="checkbox" name="bleu" id="bleu" /><label for="bleu">Bleu</label>
+                <br />
+                <input type="checkbox" name="rouge" id="rouge" /><label for="rouge">Rouge</label>
+                <br />
+                Combien d'enfants souhaitez-vous?<br />
+                <input type="radio" name="enfants" value="0" id="0" checked /><label for="0">Aucun</label>
+                <br />
+                <input type="radio" name="enfants" value="1a2" id="1a2" /><label for="1a2">Un ou deux</label>
+                <br />
+                <input type="radio" name="enfants" value="3a5" id="3a5" /><label for="3a5">Trois à Cinq</label>
+                <br />
+                <input type="radio" name="enfants" value="6+" id="6+" /><label for="6+">Six ou plus</label>
+                <br />
+                Quel est votre signe astro?<br />
+                <input type="radio" name="signe" value="capricorne" id="capricorne" /><label for="capricorne">Capricorne</label>
+                <br />
+                <input type="radio" name="signe" value="poisson" id="poisson" /><label for="poisson">Poisson</label>
+                <br />
+                <input type="radio" name="signe" value="vierge" id="vierge" /><label for="vierge">Vierge</label>
+                <br />
+                <input type="radio" name="signe" value="scorpion" id="scorpion" /><label for="scorpion">Scorpion</label>
+                <br />
+                <label for="planetes">Sur quelle planètes sommes-nous?</label><br />
+                <select name="planetes" id="planetes">
+                    <optgroup label="Petites">
+                        <option value="mercure">Mercure</option>
+                        <option value="venus">Vénus</option>
+                        <option value="terre">Terre</option>
+                        <option value="mars">Mars</option>
+                    </optgroup>
+                    <optgroup label="Grandes">
+                        <option value="jupiter">Jupiter</option>
+                        <option value="saturne" selected>Saturne</option>
+                        <option value="neptune">Neptune</option>
+                        <option value="uranus">Uranus</option>
+                    </optgroup>
+                </select>
+            </p>
+
+        </fieldset>
+
+        <input type="submit" value="Envoyer" />
+        <input type="reset" value="Reset" />
+
+    </form>
+
+</body>
+</html>

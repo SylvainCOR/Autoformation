@@ -1,0 +1,18 @@
+﻿form {
+    text-align: left;
+}
+
+:required{
+    background-color:lightcoral;
+}
+
+:invalid{
+    border-color:darkred;
+}
+
+:focus{
+    font-weight:bold;
+    color:midnightblue;
+    background-color:antiquewhite;
+}
+
